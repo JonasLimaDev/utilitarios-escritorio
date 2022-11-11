@@ -13,7 +13,7 @@ layout_column = [  [sg.T("")],
             [sg.Button('Ok',font=fonte), sg.Button('Limpar',font=fonte), sg.Button('Fechar',font=fonte)] ]
 layout = [[sg.Column(layout_column, element_justification='c')]]
 # Create the Window
-window = sg.Window('Divisor de Arquivos', layout,size=(620,320) )
+window = sg.Window('Divisor de Arquivos', layout,icon=r"logo.ico",size=(620,360) )
 # Event Loop to process "events" and get the "values" of the inputs
 #print(sg.theme_list())
 while True:
