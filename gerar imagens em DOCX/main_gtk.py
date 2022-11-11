@@ -104,7 +104,7 @@ class ButtonWindow(Gtk.Window):
             Gtk.ResponseType.OK,
         )
         dialog.set_select_multiple(True)
-
+        dialog.set_default_size(800, 400)
         self.add_filters(dialog)
 
         response = dialog.run()
