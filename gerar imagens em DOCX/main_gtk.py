@@ -17,6 +17,10 @@ class ButtonWindow(Gtk.Window):
         super().__init__(title="Inserir Fotos em DOCX")
 
         self.set_border_width(40) # margem dos objetos
+        try:
+            self.set_icon_from_file("./logo-img-in-docx.ico")
+        except:
+            pass
 
         self.set_default_size(250, 80) # tamnaho da janela
         self.set_resizable(False) # desabilita o redimensionamento da janela
